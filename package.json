@@ -1,0 +1,30 @@
+{
+  "name": "@leotabosa/jest-basics",
+  "version": "0.0.1",
+  "description": "@leotabosa/jest-basics",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:ci": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leotabosa/jest-basics.git"
+  },
+  "keywords": [
+    "jest",
+    "tdd"
+  ],
+  "author": "leotabosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leotabosa/jest-basics/issues"
+  },
+  "homepage": "https://github.com/leotabosa/jest-basics#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}

@@ -7,4 +7,12 @@ describe("should test async functions", () => {
 
     expect(res).toBe(true);
   });
+
+  it("should await for promise and handle error", async () => {
+    let spy = {};
+    spy.console = jest.spyOn(console, "error").mockImplementation(() => {});
+
+    await asyncError();
+    expect(spy).toHaveBeenCalled();
+  });
 });

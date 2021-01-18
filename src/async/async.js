@@ -1,13 +1,14 @@
 export function asyncDelay() {
-  return setTimeout(() => Promise.resolve(true), 1000);
+  setTimeout(() => {}, 1000);
+  return Promise.resolve(true);
 }
 
-export function asyncError() {
+export async function asyncError() {
   const promiseError = () => Promise.reject("Error!");
-  
+
   try {
     await promiseError();
   } catch (error) {
-      console.error(error);
+    console.error(error);
   }
 }

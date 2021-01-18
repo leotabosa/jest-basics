@@ -1,4 +1,4 @@
-const { asyncDelay } = require("./async");
+const { asyncDelay, asyncError } = require("./async");
 
 describe("should test async functions", () => {
   it("shoud await for promise to resolve", async () => {
@@ -13,6 +13,6 @@ describe("should test async functions", () => {
     spy.console = jest.spyOn(console, "error").mockImplementation(() => {});
 
     await asyncError();
-    expect(spy).toHaveBeenCalled();
+    expect(spy["console"]).toHaveBeenCalled();
   });
 });

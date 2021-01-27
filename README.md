@@ -7,26 +7,24 @@ After cloning and entering the repository's folder:
 
 1. Install dependencies.
 
-With yarn
-```sh
+```sh 
+// yarn
 yarn install
 ```
 
-With npm
-```sh
+```sh 
+// npm
 npm install
 ```
 
 2. Run tests.
 
-With yarn
 ```sh
 yarn test
 ```
 
 3. Run tests with coverage.
 
-With yarn
 ```sh
 yarn test:ci
 ```

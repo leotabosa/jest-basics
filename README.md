@@ -1,5 +1,6 @@
 # jest-basics
-jest basic sample
+
+Repository to exemplify testing with Jest on Vue and vanilla JavaScript.
 
 ## How to run
 
